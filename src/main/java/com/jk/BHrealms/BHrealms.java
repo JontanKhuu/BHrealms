@@ -2,6 +2,6 @@ package com.jk.BHrealms;
 
 import net.minecraftforge.fml.common.Mod;
 
-@Mod()p
+@Mod()pasdasdasd
 public class BHrealms {
 }
