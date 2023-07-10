@@ -1,4 +1,4 @@
-package com.jk.BHrealms.Init;
+package com.jk.BHrealms.init;
 
 import com.jk.BHrealms.BHrealms;
 import net.minecraft.world.level.block.Block;
