@@ -12,7 +12,7 @@ public class TierInit {
             5,
             20,
             TagInit.NEEDS_ZOMBIE_TOOL,
-            () -> Ingredient.of(Items.IRON_INGOT)
+            () -> Ingredient.of(ItemInit.ZOMBIE_HELMET::get)
             //() -> Ingredient.of(Items.NETHERITE_INGOT)
     );
 }

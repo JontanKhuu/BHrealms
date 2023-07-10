@@ -14,12 +14,12 @@ import static com.jk.BHrealms.init.CreativeTabInit.addToTab;
 public class ItemInit {
     public static final DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS, BHrealms.MODID);
 
-    public static final RegistryObject<SwordItem> ZomWep1 = addToTab(ITEM.register("zomwep_sword"), () -> new SwordItem(
-                    null
-            ,5
-            , 1.6f
-            , new Item.Properties()
-    ));
+    public static final RegistryObject<SwordItem> ZomWep1 = addToTab(ITEM.register("zomwep_sword", () -> new SwordItem(
+            TierInit.ZOMBIE,
+            5,
+            1.6f,
+            new Item.Properties()
+    )));
 
 
 
