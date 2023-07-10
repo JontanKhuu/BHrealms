@@ -1,10 +1,7 @@
 package com.jk.BHrealms;
 
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.DeferredRegister;
 
-@Mod(BHrealms.MODID)
+@Mod()p
 public class BHrealms {
-    public static final String MODID = "bhrealms";
-
 }
