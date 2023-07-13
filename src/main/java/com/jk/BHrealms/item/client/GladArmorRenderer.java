@@ -1,12 +1,13 @@
-package com.jk.BHrealms.Entity.Client;
+package com.jk.BHrealms.item.client;
 
-import com.jk.BHrealms.Entity.Custom.GladArmorItem;
+import com.jk.BHrealms.item.custom.GladArmorItem;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
+
 public class GladArmorRenderer extends GeoArmorRenderer<GladArmorItem> {
 
-     public GladArmorRenderer() {
+    public GladArmorRenderer() {
         super(new GladArmorModel());
     }
 }

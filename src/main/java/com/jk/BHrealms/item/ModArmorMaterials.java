@@ -1,4 +1,4 @@
-package com.jk.BHrealms.Entity.Custom;
+package com.jk.BHrealms.item;
 
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
@@ -15,13 +15,13 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    GLAD("glad", 16,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+    GLAD("glad", 26,Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
         p_266655_.put(ArmorItem.Type.BOOTS, 3);
-        p_266655_.put(ArmorItem.Type.LEGGINGS, 5);
-        p_266655_.put(ArmorItem.Type.CHESTPLATE, 7);
-        p_266655_.put(ArmorItem.Type.HELMET, 4);
-    }), 5, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.5F, 0.1F, () -> {
-        return Ingredient.of(Items.IRON_INGOT);
+        p_266655_.put(ArmorItem.Type.LEGGINGS, 6);
+        p_266655_.put(ArmorItem.Type.CHESTPLATE, 8);
+        p_266655_.put(ArmorItem.Type.HELMET, 3);
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
+        return Ingredient.of(Items.NETHERITE_INGOT);
     });
 
     public static final StringRepresentable.EnumCodec<ArmorMaterials> CODEC = StringRepresentable.fromEnum(ArmorMaterials::values);
@@ -87,4 +87,3 @@ public enum ModArmorMaterials implements ArmorMaterial {
         return this.name;
     }
 }
-

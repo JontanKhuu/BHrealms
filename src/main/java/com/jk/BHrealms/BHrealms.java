@@ -1,6 +1,5 @@
 package com.jk.BHrealms;
 
-import com.jk.BHrealms.Entity.ModEntities;
 import com.jk.BHrealms.init.BlockInit;
 import com.jk.BHrealms.init.CreativeTabInit;
 import com.jk.BHrealms.init.ItemInit;
@@ -17,6 +16,6 @@ public class BHrealms {
         ItemInit.ITEM.register(bus);
         BlockInit.BLOCKS.register(bus);
         CreativeTabInit.TABS.register(bus);
-        ModEntities.register(bus);
+
     }
 }

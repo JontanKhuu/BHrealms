@@ -60,7 +60,6 @@ mandatory=true
 versionRange="${4.2}"
 ordering="NONE"
 side="BOTH"
-# Here's another dependency
 [[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
