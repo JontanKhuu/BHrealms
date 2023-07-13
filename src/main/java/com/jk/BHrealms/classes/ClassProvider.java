@@ -1,4 +1,4 @@
-package com.kevin.bhrealms.classes;
+package com.jk.BHrealms.classes;
 
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
