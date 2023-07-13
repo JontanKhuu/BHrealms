@@ -1,5 +1,7 @@
 {
   "itemGroup.zom_tab": "Zombie Dungeon Tab",
-  "item.bhrealms.zombie_helmet": "Zombie Helmet"
+  "item.bhrealms.zombie_helmet": "Zombie Helmet",
+  "item.bhrealms.glad_helmet": "Gladiator Helmet",
+  "item.bhrealms.zomwep_sword": "Zombie Sword"
 
 }
