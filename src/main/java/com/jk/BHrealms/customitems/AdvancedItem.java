@@ -1,4 +1,4 @@
-package com.jk.BHrealms.item;
+package com.jk.BHrealms.customitems;
 
 import com.jk.BHrealms.classes.ClassProvider;
 import net.minecraft.network.chat.Component;
