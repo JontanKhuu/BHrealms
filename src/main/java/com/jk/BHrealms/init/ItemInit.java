@@ -35,11 +35,11 @@ public class ItemInit {
 
     public static final RegistryObject<Item> GLAD_HELMET = ITEM.register("glad_helmet",
             () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.HELMET, new Item.Properties()));
- /*   public static final RegistryObject<Item> GLAD_CHESTPLATE = ITEM.register("glad_chestplate",
+    public static final RegistryObject<Item> GLAD_CHESTPLATE = ITEM.register("glad_chestplate",
             () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> GLAD_LEGGINGS = ITEM.register("glad_leggings",
             () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> GLAD_BOOTS = ITEM.register("glad_boots",
-            () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.BOOTS, new Item.Properties())); */
+            () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 }

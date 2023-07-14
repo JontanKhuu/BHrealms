@@ -1,5 +1,9 @@
 {
   "itemGroup.zom_tab": "Zombie Dungeon Tab",
-  "item.bhrealms.zombie_helmet": "Zombie Helmet"
+  "item.bhrealms.zombie_helmet": "Zombie Helmet",
+  "item.bhrealms.glad_helmet" : "Glad Helm",
+  "item.bhrealms.glad_chestplate" : "Glad Chestplate",
+  "item.bhrealms.glad_leggings":"Glad Leggings",
+  "item.bhrealms.glad_boots" : "Glad Boots"
 
 }
