@@ -5,5 +5,6 @@
   "item.bhrealms.glad_chestplate" : "Glad Chestplate",
   "item.bhrealms.glad_leggings":"Glad Leggings",
   "item.bhrealms.glad_boots" : "Glad Boots",
-  "item.bhrealms.testing_stick": "Testing Stick"
+  "item.bhrealms.testing_stick": "Testing Stick",
+  "item.bhrealms.example_item": "Example Item"
 }

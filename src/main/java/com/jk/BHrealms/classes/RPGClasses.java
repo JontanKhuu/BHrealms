@@ -3,14 +3,14 @@ package com.jk.BHrealms.classes;
 import net.minecraft.nbt.CompoundTag;
 
 public class RPGClasses {
-    private String playerClass;
+    private int playerClass;
 
-    public String getPlayerClass() {
+    public int getPlayerClass() {
         return playerClass;
     }
 
     public void setPlayerClass() {
-        this.playerClass = "archer";
+        this.playerClass = 1;
     }
 
     public void copyFrom(RPGClasses source) {
@@ -18,11 +18,11 @@ public class RPGClasses {
     }
 
     public void saveNBTData(CompoundTag nbt) {
-        nbt.putString("class", playerClass);
+        nbt.putInt("class", playerClass);
     }
 
     public void loadNBTData(CompoundTag nbt) {
-        playerClass = nbt.getString("class");
+        playerClass = nbt.getInt("class");
     }
 
 

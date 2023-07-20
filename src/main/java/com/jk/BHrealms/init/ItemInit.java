@@ -45,5 +45,6 @@ public class ItemInit {
     public static final RegistryObject<Item> GLAD_BOOTS = addToTab(ITEM.register("glad_boots",
             () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.BOOTS, new Item.Properties())));
 
-
+    public static final RegistryObject<Item> EXAMPLE_ITEM = addToTab(ITEM.register("example_item",
+            () -> new AdvancedItem(new Item.Properties())));
 }

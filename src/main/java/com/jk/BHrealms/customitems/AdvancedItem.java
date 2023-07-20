@@ -22,7 +22,7 @@ public class AdvancedItem extends Item {
         if (hand == InteractionHand.MAIN_HAND) {
             player.getCapability(ClassProvider.CLASSES).ifPresent(playerClass -> {
                 playerClass.setPlayerClass();
-                player.sendSystemMessage(Component.literal(playerClass.getPlayerClass()));
+
 
             });
         }
