@@ -1,7 +1,6 @@
 package com.jk.BHrealms.item.client;
 
 import com.jk.BHrealms.item.custom.GladArmorItem;
-import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 
