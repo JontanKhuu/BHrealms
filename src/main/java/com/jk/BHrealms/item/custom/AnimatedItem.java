@@ -25,8 +25,8 @@ public class AnimatedItem extends Item implements GeoItem {
         super(properties);
     }
 
-   private PlayState predicate(AnimationState animationState) {
-    //    animationState.getController().setAnimation(RawAnimation.begin().then("", Animation.LoopType.LOOP));
+    private PlayState predicate(AnimationState animationState) {
+        animationState.getController().setAnimation(RawAnimation.begin().then("idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
@@ -34,8 +34,6 @@ public class AnimatedItem extends Item implements GeoItem {
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         controllerRegistrar.add(new AnimationController(this, "controller", 0, this::predicate));
     }
-
-
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
@@ -57,6 +55,7 @@ public class AnimatedItem extends Item implements GeoItem {
                 if(this.renderer == null) {
                     renderer = new AnimatedItemRenderer();
                 }
+
                 return this.renderer;
             }
         });
