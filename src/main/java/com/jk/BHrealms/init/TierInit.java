@@ -15,4 +15,13 @@ public class TierInit {
             () -> Ingredient.of(ItemInit.ZOMBIE_HELMET::get)
             //() -> Ingredient.of(Items.NETHERITE_INGOT)
     );
+    public static final ForgeTier EXAMPLE = new ForgeTier(
+            3,
+            1000,
+            1.5f,
+            7,
+            15,
+            TagInit.NEEDS_EXAMPLE_TOOL,
+            () -> Ingredient.of(ItemInit.EXAMPLE_ITEM::get)
+    );
 }

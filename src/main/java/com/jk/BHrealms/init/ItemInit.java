@@ -3,6 +3,7 @@ package com.jk.BHrealms.init;
 import com.jk.BHrealms.BHrealms;
 import com.jk.BHrealms.customitems.AdvancedItem;
 import com.jk.BHrealms.item.ModArmorMaterials;
+import com.jk.BHrealms.item.custom.AnimatedExcaliburItem;
 import com.jk.BHrealms.item.custom.AnimatedItem;
 import com.jk.BHrealms.item.custom.GladArmorItem;
 import net.minecraft.client.animation.AnimationDefinition;
@@ -12,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -67,24 +69,38 @@ public class ItemInit {
                     )
 
     ));
+    //Sword Item Properties: Tier, Damage, Attack Speed, Item Properties
+    public static final RegistryObject<SwordItem> EXAMPLE_SWORD = addToTab(ITEM.register("example_sword",
+            () -> new SwordItem(
+                    TierInit.EXAMPLE,
+                    7,
+                    2.5f,
+                    new Item.Properties()
+                        .durability(1000)
+                        .rarity(Rarity.COMMON)
+                    )
+    ));
+    public static final RegistryObject<Item> EXCALIBUR = addToTab((ITEM.register("excalibur",
+            () -> new AnimatedExcaliburItem(TierInit.EXAMPLE, 20, 5,
+                    new Item.Properties()))));
     public static final RegistryObject<Item> STEROIDS = addToTab(ITEM.register("steroids",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)
                     .food(new FoodProperties.Builder()
                             .effect(() -> new MobEffectInstance(
                                     MobEffects.DAMAGE_BOOST,
-                                    9600,
+                                    5000,
                                     1),
                                     1f
                             )
                             .effect(() -> new MobEffectInstance(
-                                            MobEffects.MOVEMENT_SPEED,
-                                            9600,
-                                            1),
+                                    MobEffects.POISON,
+                                    5000,
+                                    0),
                                     1f
                             )
                             .build())
-                    .rarity(Rarity.UNCOMMON)
+                    .rarity(Rarity.EPIC)
             )
     ));
 }
