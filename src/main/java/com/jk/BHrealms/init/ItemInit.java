@@ -33,14 +33,6 @@ public class ItemInit {
 
 
 
-    public static final RegistryObject<ArmorItem> ZOMBIE_HELMET = addToTab(ITEM.register("zombie_helmet",
-            () -> new ArmorItem(
-                    ArmorMaterialInit.ZOMBIE,
-                    ArmorItem.Type.HELMET,
-                    new Item.Properties()
-                            .setNoRepair())
-    ));
-
     public static final RegistryObject<Item> GLAD_HELMET = addToTab(ITEM.register("glad_helmet",
             () -> new GladArmorItem(ModArmorMaterials.GLAD, ArmorItem.Type.HELMET, new Item.Properties())));
 
@@ -59,30 +51,12 @@ public class ItemInit {
     public static final RegistryObject<Item> CHAINSWORD= addToTab((ITEM.register("chainsword",
             () -> new AnimatedItem(new Item.Properties()))));
 
-    public static final RegistryObject<Item> EXAMPLE = addToTab(ITEM.register("example",
-            () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                            .alwaysEat()
-                            .build())
-                    .fireResistant()
-                    .stacksTo(32)
-                    )
-
-    ));
     //Sword Item Properties: Tier, Damage, Attack Speed, Item Properties
-    public static final RegistryObject<SwordItem> EXAMPLE_SWORD = addToTab(ITEM.register("example_sword",
-            () -> new SwordItem(
-                    TierInit.EXAMPLE,
-                    7,
-                    2.5f,
-                    new Item.Properties()
-                        .durability(1000)
-                        .rarity(Rarity.COMMON)
-                    )
-    ));
+
     public static final RegistryObject<Item> EXCALIBUR = addToTab((ITEM.register("excalibur",
             () -> new AnimatedExcaliburItem(TierInit.EXAMPLE, 20, 5,
                     new Item.Properties()))));
+
     public static final RegistryObject<Item> STEROIDS = addToTab(ITEM.register("steroids",
             () -> new Item(new Item.Properties()
                     .stacksTo(16)
