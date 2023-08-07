@@ -2,6 +2,7 @@ package com.jk.BHrealms;
 
 import com.jk.BHrealms.init.BlockInit;
 import com.jk.BHrealms.init.CreativeTabInit;
+import com.jk.BHrealms.init.EntityInit;
 import com.jk.BHrealms.init.ItemInit;
 import com.jk.BHrealms.networking.ModNetworking;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,7 @@ public class BHrealms {
         ItemInit.ITEM.register(bus);
         BlockInit.BLOCKS.register(bus);
         CreativeTabInit.TABS.register(bus);
+        EntityInit.ENTITIES.register(bus);
         ModNetworking.register();
     }
 }

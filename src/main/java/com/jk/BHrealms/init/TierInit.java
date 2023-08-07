@@ -12,7 +12,7 @@ public class TierInit {
             5,
             20,
             TagInit.NEEDS_ZOMBIE_TOOL,
-            () -> Ingredient.of(ItemInit.ZOMBIE_HELMET::get)
+            () -> Ingredient.of(ItemInit.GLAD_HELMET::get)
             //() -> Ingredient.of(Items.NETHERITE_INGOT)
     );
     public static final ForgeTier EXAMPLE = new ForgeTier(

@@ -10,7 +10,7 @@ public class ArmorMaterialInit {
             new int[] { 2, 4, 3, 1},
             20,
             SoundEvents.ARMOR_EQUIP_CHAIN,
-            () -> Ingredient.of(ItemInit.ZOMBIE_HELMET::get),
+            () -> Ingredient.of(ItemInit.GLAD_HELMET::get),
             "zombie",
             0.1f,
             0.2f

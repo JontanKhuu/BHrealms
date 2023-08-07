@@ -21,7 +21,7 @@ public class AdvancedItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if (hand == InteractionHand.MAIN_HAND) {
             player.getCapability(ClassProvider.CLASSES).ifPresent(playerClass -> {
-                playerClass.setPlayerClass();
+                playerClass.setPlayerClass(1);
 
 
             });

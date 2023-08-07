@@ -3,6 +3,8 @@ package com.jk.BHrealms.event;
 import com.jk.BHrealms.BHrealms;
 import com.jk.BHrealms.classes.ClassProvider;
 import com.jk.BHrealms.classes.RPGClasses;
+import com.jk.BHrealms.entity.FlailZombie;
+import com.jk.BHrealms.init.EntityInit;
 import com.jk.BHrealms.networking.ModNetworking;
 import com.jk.BHrealms.networking.packet.ClassDataSyncS2CPacket;
 import net.minecraft.resources.ResourceLocation;
@@ -11,6 +13,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -56,6 +59,7 @@ public class ModEvents {
             }
         }
 }
+
 
 
 
